@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <title>Catalogo | Buzo Mariposa</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__img">
+        <a href="index.html">
+          <img
+            src="/img/Sin-título-1.png"
+            alt="Logo RingoShop"
+            class="header__logo"
+          />
+        </a>
+      </div>
+      <!--Logo-->
+
+      <!--Navegacion del Sitio-->
+
+      <nav>
+        <ul class="lista">
+          <li class="lista__item"><a href="index.html">Inicio</a></li>
+          <li class="lista__item"><a href="catalogo.html">Catálogo</a></li>
+          <li class="lista__item"><a href="nosotros.html">Nosotros</a></li>
+          <li class="lista__item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main class="container">
+      <div class="container__img">
+        <img src="img/buzomariposa.jpg" alt="Buzo Mariposa" />
+      </div>
+
+      <h2 class="container__titulo">Buzo Mariposa</h2>
+
+      <p class="container__descripcion">
+        Buzo de algodón de buena calidad en su mayoria de colores. Buzos urbanos
+        para la temporada de invierno 2021.
+      </p>
+
+      <div class="container__opcion">
+        <div class="container__talle">
+          <label for="talle">Talle</label>
+          <select name="talle" id="talle">
+            <option value="s">S</option>
+            <option value="m">M</option>
+          </select>
+        </div>
+
+        <div class="container__color">
+          <label for="color">Color</label>
+          <select name="color" id="color">
+            <option value="blanco">Blanco</option>
+          </select>
+        </div>
+      </div>
+      <div class="container__precio">
+        <h3>Precio</h3>
+        <div>
+          <del>$4500</del>
+          <p>$3900</p>
+        </div>
+      </div>
+
+      <div class="container__boton">
+        <input type="button" value="Comprar" class="container__comprar" />
+        <input
+          type="button"
+          value="Agregar al carrito"
+          class="container__comprar"
+        />
+        <input
+          type="button"
+          value="Seguir comprando"
+          class="container__comprar"
+        />
+      </div>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+      <nav>
+        <ul class="lista">
+          <li class="lista__item"><a href="index.html">Inicio</a></li>
+          <li class="lista__item"><a href="catalogo.html">Catálogo</a></li>
+          <li class="lista__item"><a href="nosotros.html">Nosotros</a></li>
+          <li class="lista__item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="pie">
+        <div class="copyright">
+          <em
+            >Copyright todos los derechos reservados 2021. Exequiel Raineri</em
+          >
+        </div>
+
+        <div class="redes">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-facebook"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+              /></svg></a
+          ><!--Facebook-->
+
+          <a href="https://www.instagram.com/_ringoshop_/" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a
+          ><!--Instagram-->
+          <!-- <img src="" />Blog -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
