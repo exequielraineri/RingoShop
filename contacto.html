@@ -37,112 +37,125 @@
           <form action="" class="formulario">
             <fieldset class="formulario__fieldset">
               <legend>Formulario de Contacto</legend>
-
-              <div>
-                <label for="nombre">Nombre</label>
+              <p class="formulario__parrafo">
+                Envianos tus consultas, y/o reclamos completando el siguiente
+                formulario:
+              </p>
+              <div class="formulario__input">
+                <!-- <label for="nombre">Nombre</label> -->
                 <input
                   type="text"
                   name="nombre"
-                  placeholder="Nombre"
+                  placeholder="Nombre y Apellido*"
                   id="nombre"
+                  required
                 />
-              </div>
 
-              <br />
+                <!-- <br /> -->
 
-              <div>
+                <!-- <div>
                 <label for="apellido">Apellido</label>
                 <input
                   type="text"
                   name="apellido"
                   placeholder="Apellido"
                   id="apellido"
+                  required
                 />
-              </div>
+              </div> -->
 
-              <br />
+                <!-- <br /> -->
 
-              <div>
-                <label for="email">Correo electrónico</label>
+                <!-- <label for="email">Correo electrónico</label> -->
                 <input
                   type="email"
                   name="email"
-                  placeholder="Correo electrónico"
+                  placeholder="Correo electrónico*"
                   id="email"
+                  required
                 />
-              </div>
 
-              <br />
+                <!-- <br /> -->
 
-              <div>
-                <label for="telefono">Teléfono</label>
+                <!-- <label for="telefono">Teléfono</label> -->
                 <input
                   type="tel"
                   name="telefono"
-                  placeholder="Teléfono"
+                  placeholder="Teléfono (opcional)"
                   id="telefono"
                 />
               </div>
 
-              <br />
+              <!-- <br /> -->
 
-              <div>
+              <!-- <div>
                 <label for="estadoCivil">Estado civil</label>
                 <select name="estadoCivil" id="estadoCivil">
                   <option value="Soltero">Soltero/a</option>
                   <option value="Casado">Casado/a</option>
                   <option value="Viudo">Viudo/a</option>
                 </select>
-              </div>
+              </div> -->
 
-              <br />
+              <!-- <br /> -->
 
-              <div>
+              <!-- <div>
                 <label for="sexo">Sexo</label><br />
                 <input type="radio" name="sexo" id="femenino" value="fem" />
                 <label for="femenino">Femenino</label><br />
 
                 <input type="radio" name="sexo" id="masculino" value="masc" />
                 <label for="masculino">Masculino</label><br />
-
+                
                 <input type="radio" name="sexo" id="otro" value="otro" />
                 <label for="otro">Otro</label>
-              </div>
+              </div> -->
 
-              <br />
-
-              <div>
-                <label for="ofertas">¿Desea recibir ofertas exclusivas?</label>
-                <input type="checkbox" name="ofertas" id="ofertas" value="si" />
-              </div>
-
-              <br />
-
-              <div>
-                <label for="terminos">Acepto terminos y condiciones</label>
-                <input
-                  type="checkbox"
-                  name="terminos"
-                  id="terminos"
-                  value="1"
-                  required
-                />
-              </div>
-
-              <br />
-
-              <div>
+              <!-- <br /> -->
+              <div class="formulario__mensaje">
                 <label for="mensaje">Mensaje:</label>
+                <br />
                 <textarea
                   name="mensaje"
-                  placeholder="Mensaje"
+                  placeholder="Tu consulta"
                   id="mensaje"
                   cols="50"
-                  rows="10"
+                  rows="5"
                 ></textarea>
               </div>
 
-              <br />
+              <div class="formulario__checkbox">
+                <div class="formulario__checkbox--boton">
+                  <label for="ofertas"
+                    >¿Desea recibir ofértas exclusivas?</label
+                  >
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="ofertas"
+                      id="ofertas"
+                      value="si"
+                    />
+                  </div>
+                </div>
+                <!-- <br /> -->
+                <div class="formulario__checkbox--boton">
+                  <label for="terminos">Acepto términos y condiciones </label>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="terminos"
+                      id="terminos"
+                      value="1"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- <br /> -->
+
+              <!-- <br /> -->
 
               <div class="contacto__boton">
                 <input type="submit" value="Enviar" />
