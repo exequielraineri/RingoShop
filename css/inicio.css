@@ -109,29 +109,16 @@ ul {
   color: var(--cuatro);
 }
 
-/* carrusel */
+/* CARRUSEL */
 
 .bloque__carrusel {
-  width: 100%;
-}
-/* .carrusel {
-  width: 70%;
+  background-color: rgba(0, 0, 0, 0.01);
+  width: 80%;
+  padding-top: 100px;
   margin: auto;
-  margin-top: 20%;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  background-color: #a6a6a610;
-  transform: skew(10deg, 0deg);
 }
 
-.carrusel__img {
-  /* margin: auto;
-  width: 60%;
-  transform: skew(-10deg, 0deg);
-}
-
-/* menu */
+/* MENU */
 
 main {
   width: 90%;
