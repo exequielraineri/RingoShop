@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RingoShop/Catalogo</title>
-    <link rel="stylesheet" href="css/inicio.css" />
     <!-- BOOTSTRAP -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
     />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -28,39 +27,26 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
+    
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
     />
+
+
+    <link rel="stylesheet" href="css/inicio.css" />
   </head>
 
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <nav class=" header navbar navbar-expand-md navbar-light bg-light fixed-top ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" class="navbar-brand">
-          <img
-            src="./img/logoprincipal.png"
-            alt="Logo RingoShop"
-            class="header__logo animate__animated animate__bounceInDown"
+<body>
+  <nav class=" header navbar navbar-expand-md navbar-light bg-light fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" class="navbar-brand">
+        <img src="./img/logoprincipal.png" alt="Logo RingoShop" class="header__logo animate__animated animate__bounceInDown"
           /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -78,122 +64,121 @@
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html">
-        <img
-          src="./img/logoprincipal.png"
-          alt="Logo RingoShop"
-          class="header__logo"
-        /> </a
-      ><!--Logo-->
-
-      <!--Navegacion del Sitio-->
-
-      <nav>
-        <ul class="lista">
-          <li class="lista__item"><a href="index.html">Inicio</a></li>
-          <li class="lista__item"><a href="catalogo.html">Catálogo</a></li>
-          <li class="lista__item"><a href="nosotros.html">Nosotros</a></li>
-          <li class="lista__item"><a href="contacto.html">Contacto</a></li>
+          </li>
         </ul>
-      </nav>
-    </header>
-
+      </div>
+    </div>
+  </nav>
+    
     <hr />
-
+    
     <main>
       <h3 class="subtitulo">Todos los productos</h3>
-
+      
       <hr />
-
+      
       <section class="seccion contenedor__padre">
         <article class="contenedor__hijo">
           <a href="buzoCrew.html">
             <img src="./img/buzodrew.jpg" alt="Buzo canguro drew"
-          /></a>
-          <p>Buzo canguro Drew</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
+            /></a>
+            <p>Buzo canguro Drew</p>
+            <table class="table">
+              <thead>
 
-            <tr>
-              <th>$3500</th>
-              <th>
-                <ul>
-                  <li>S</li>
-                  <li>M</li>
-                  <li>L</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
+                <tr>
+                  <th class="col">Precio</th>
+                  <th class="col">Talles</th>
+                  <th class="col">Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                
+                <tr>
+                  <th class="col">$3500</th>
+                  <th class="col">
+                    <ul>
+                      <li>S</li>
+                      <li>M</li>
+                      <li>L</li>
+                    </ul>
+                  </th>
+                  <th class="col">
+                    Buzo de algodon de <br />
+                    muy buena calidad
+                  </th>
+                </tr>
+              </tbody>
           </table>
         </article>
+
         <article class="contenedor__hijo">
           <a href="buzoBatik.html">
             <img src="./img/buzobatik.jpg" alt="Buzo Batik" />
           </a>
           <p>Buzo Batik</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$3800</th>
-              <th>
-                <ul>
-                  <li>S</li>
-                  <li>M</li>
-                  <li>XL</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
-        </article>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              
+              <tr>
+                <th class="col">$3800</th>
+                <th>
+                  <ul>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>XL</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
+          </article>
+
         <article class="contenedor__hijo">
           <a href="buzoGato.html">
             <img src="./img/buzogato.jpg" alt="Buzo Gato" />
           </a>
           <p>Buzo Gato</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$3300</th>
-              <th>
-                <ul>
-                  <li>M</li>
-                  <li>L</li>
-                  <li>XL</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">$3300</th>
+                <th class="col">
+                  <ul>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
           </table>
         </article>
 
@@ -202,26 +187,31 @@
             <img src="./img/buzomariposa.jpg" alt="Buzo Mariposa" />
           </a>
           <p>Buzo canguro Mariposa</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$3900</th>
-              <th>
-                <ul>
-                  <li>S</li>
-                  <li>M</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
+          <table class="table">
+            <thead>
+              <tr >
+                <th >Precio</th>
+                <th >Talles</th>
+                <th >Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr >
+                <th >$3900</th>
+                <th >
+                  <ul>
+                    <li>S</li>
+                    <li>M</li>
+                  </ul>
+                </th>
+                <th >
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
         </article>
 
         <div class="contenedor__hijo contenedor__oferta">
@@ -233,66 +223,79 @@
             <img src="./img/buzo1.jpg" alt="Buzo Rosa" />
           </a>
           <p>Buzo canguro Rosa</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>
-                <ul>
-                  <li><del>$4000</del></li>
-                  <li>$3500</li>
-                </ul>
-              </th>
+          <table class="table">
+            <thead>
 
-              <th>
-                <ul>
-                  <li>S</li>
-                  <li>M</li>
-                  <li>L</li>
-                  <li>XL</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">
+                  <ul>
+                    <li><del>$4000</del></li>
+                    <li>$3500</li>
+                  </ul>
+                </th>
+                
+                <th class="col">
+                  <ul>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
         </article>
+
         <article class="contenedor__hijo">
           <a href="buzoMickey.html">
             <img src="./img/buzomickey.jpg" alt="Buzo Mickey" />
           </a>
           <p>Buzo Mickey</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>
-                <ul>
-                  <li><del>$3000</del></li>
-                  <li>$2500</li>
-                </ul>
-              </th>
-              <th>
-                <ul>
-                  <li>S</li>
-                  <li>L</li>
-                  <li>XL</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">
+                  <ul>
+                    <li><del>$3000</del></li>
+                    <li>$2500</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  <ul>
+                    <li>S</li>
+                    <li>L</li>
+                    <li>XL</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
         </article>
 
         <article class="contenedor__hijo">
@@ -300,57 +303,69 @@
             <img src="./img/buzobatiknegro.jpg" alt="Buzo Batik Negro" />
           </a>
           <p>Buzo Batik Negro</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>
-                <ul>
-                  <li><del>$5000</del></li>
-                  <li>$4500</li>
-                </ul>
-              </th>
-              <th>
-                <ul>
-                  <li>S</li>
-                  <li>M</li>
-                  <li>L</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
-        </article>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <th class="col">
+                  <ul>
+                    <li><del>$5000</del></li>
+                    <li>$4500</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  <ul>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
+          </article>
 
         <article class="contenedor__hijo">
           <a href="buzoLA.html">
             <img src="./img/buzolosangeles.jpg" alt="Buzo Los Angeles" />
           </a>
           <p>Buzo Los Angeles</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$3400</th>
-              <th>
-                <ul>
-                  <li>S</li>
-                </ul>
-              </th>
-              <th>
-                Buzo de algodon de <br />
-                muy buena calidad
-              </th>
-            </tr>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">$3400</th>
+                <th class="col">
+                  <ul>
+                    <li>S</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Buzo de algodon de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
           </table>
         </article>
 
@@ -359,26 +374,32 @@
             <img src="./img/jogger.jpg" alt="Jogger" />
           </a>
           <p>Jogger</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$4400</th>
-              <th>
-                <ul>
-                  <li>42</li>
-                  <li>43</li>
-                </ul>
-              </th>
-              <th>
-                Jogger de gabardina de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">$4400</th>
+                <th class="col">
+                  <ul>
+                    <li>42</li>
+                    <li>43</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Jogger de gabardina de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
         </article>
 
         <article class="contenedor__hijo">
@@ -386,26 +407,32 @@
             <img src="./img/joggerblanco.jpg" alt="Jogger Blanco" />
           </a>
           <p>Jogger Blanco</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$4400</th>
-              <th>
-                <ul>
-                  <li>40</li>
-                  <li>41</li>
-                </ul>
-              </th>
-              <th>
-                Jogger de gabardina de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">$4400</th>
+                <th class="col">
+                  <ul>
+                    <li>40</li>
+                    <li>41</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Jogger de gabardina de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
         </article>
 
         <article class="contenedor__hijo">
@@ -413,25 +440,31 @@
             <img src="./img/joggerclaro.jpg" alt="Jogger Claro" />
           </a>
           <p>Jogger Claro</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$4200</th>
-              <th>
-                <ul>
-                  <li>40</li>
-                  <li>43</li>
-                </ul>
-              </th>
-              <th>
-                Jogger de gabardina de <br />
-                muy buena calidad
-              </th>
-            </tr>
+          <table class="table">
+            <thead>
+
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">$4200</th>
+                <th class="col">
+                  <ul>
+                    <li>40</li>
+                    <li>43</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Jogger de gabardina de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
           </table>
         </article>
 
@@ -440,38 +473,86 @@
             <img src="./img/joggerjean.jpg" alt="Jogger" />
           </a>
           <p>Jogger con franjas</p>
-          <table border="1 solid black">
-            <tr>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Descripción</th>
-            </tr>
-            <tr>
-              <th>$4400</th>
-              <th>
-                <ul>
-                  <li>40</li>
-                  <li>42</li>
-                </ul>
-              </th>
-              <th>
-                Jogger de gabardina de <br />
-                muy buena calidad
-              </th>
-            </tr>
-          </table>
-        </article>
-      </section>
-    </main>
+          <table class="table">
+            <thead>
 
-    <hr />
+              <tr>
+                <th class="col">Precio</th>
+                <th class="col">Talles</th>
+                <th class="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th class="col">$4400</th>
+                <th class="col">
+                  <ul>
+                    <li>40</li>
+                    <li>42</li>
+                  </ul>
+                </th>
+                <th class="col">
+                  Jogger de gabardina de <br />
+                  muy buena calidad
+                </th>
+              </tr>
+            </tbody>
+            </table>
+          </article>
+        </section>
+      </main>
+      
+      <hr />
+      
+      <!-- PIE DE PAGINA -->
     <footer>
       <nav>
         <ul class="lista">
           <li class="lista__item"><a href="index.html">Inicio</a></li>
           <li class="lista__item"><a href="catalogo.html">Catálogo</a></li>
           <li class="lista__item"><a href="nosotros.html">Nosotros</a></li>
-          <li class="lista__item"><a href="contacto.html">Contacto</a></li>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <li class="lista__item"><a href="#"> Contacto</a></li>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Formulario - Contáctanos</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nombre">
+                    <label for="floatingInput">Nombre y Apellido</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingemail" placeholder="name@example.com">
+                    <label for="floatingemail">Correo</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingtel" placeholder="telefono">
+                    <label for="floatingtel">Teléfono</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="floatingmensaje" placeholder="mensaje"></textarea>
+                    <label for="floatingmensaje">Mensaje</label>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary col-3" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </ul>
       </nav>
       <div class="pie">
@@ -523,5 +604,10 @@
         </div>
       </div>
     </footer>
+    <!-- FIN DE PIE DE PAGINA -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+
