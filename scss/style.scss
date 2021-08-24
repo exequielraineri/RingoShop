@@ -1,0 +1,34 @@
+$color__uno: #f2f2f2;
+$color__dos: #a6a6a6;
+$color__tres: #595959;
+$color__cuatro: #262626;
+$color__cinco: #0d0d0d;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* etiqueta raíz */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+@import "./header";
+@import "./carrusel";
+@import "./menuIndex";
+@import "./catalogo";
+@import "./nosotros";
+@import "./contacto";
+@import "./producto";
+@import "./footer";
+@import "./mediaQ";

@@ -1,0 +1,122 @@
+/* pagina Nosotros - sobre nosotros */
+
+.menu__nosotros {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.nosotros {
+  margin: 15px;
+  font-size: 1.3rem;
+}
+
+.nosotros__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  grid-template-areas:
+    "imagen titulo titulo"
+    "imagen parrafo parrafo";
+
+  padding: 20px;
+}
+
+.nosotros__titulo {
+  grid-area: titulo;
+}
+
+.nosotros__parrafo {
+  grid-area: parrafo;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nosotros__img {
+  grid-area: imagen;
+  width: 80vh;
+}
+
+.menu__nosotros h3 {
+  font-size: 2.5rem;
+  text-decoration-line: underline;
+}
+
+.seccion__servicio {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px;
+}
+
+.seccion__servicio article {
+  padding: 2rem;
+  width: 20rem;
+  background-color: $color__uno;
+  margin: 10px;
+}
+
+.servicio__parrafo {
+  opacity: 0%;
+  margin: 5px;
+  height: 20px;
+}
+
+.seccion__servicio article:hover {
+  box-shadow: 0px 0px 34px -13px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 34px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 34px -13px rgba(0, 0, 0, 0.75);
+
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.seccion__servicio article:hover .servicio__parrafo {
+  opacity: 100%;
+  transition: all 0.5s;
+}
+
+.seccion__servicio article header {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* fundador */
+
+.bloque__fundador {
+  background-color: $color__dos;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.fundador h5 {
+  font-size: 1.3rem;
+  margin: 5px;
+}
+
+.fundador {
+  width: auto;
+}
+
+.fundador p {
+  margin: 5px;
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+
+.fundador__parrafo {
+  margin: auto;
+  width: 50%;
+}
+
+.fundador__img {
+  width: 40%;
+  margin: 20px;
+  filter: grayscale(1);
+}
+
+.fundador__img:hover {
+  filter: grayscale(0);
+  transition: all 0.4s;
+}

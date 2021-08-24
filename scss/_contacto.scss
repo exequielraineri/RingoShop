@@ -1,0 +1,98 @@
+/* pagina Contacto - formulario */
+
+.bloque__formulario {
+  /* background-color: red; */
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.formulario {
+  font-size: 1.3rem;
+  margin: 5px;
+}
+
+.formulario__fieldset {
+  padding: 2rem;
+  background-color: $color__uno;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.formulario__fieldset legend {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 2rem;
+  text-decoration-line: underline;
+  text-align: center;
+  display: flex;
+}
+
+.formulario__input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.formulario__input input {
+  border: none;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.formulario__checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 5px;
+  text-align: center;
+  margin: 5px;
+}
+
+.formulario__checkbox--boton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario__mensaje {
+  width: 50%;
+}
+
+.formulario__mensaje textarea {
+  min-width: 40px;
+  max-width: 100%;
+  min-height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+}
+
+.contacto__boton {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 40%;
+  margin: auto;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.contacto__boton input {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.contacto__boton input:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}

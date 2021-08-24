@@ -1,0 +1,93 @@
+/* Pagina de cada producto */
+
+.caja {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "img titulo"
+    "img parrafo"
+    "img opciones"
+    "img precio"
+    "img boton";
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+  padding: 20px;
+  background-color: $color__dos;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.41);
+}
+
+.caja__img {
+  width: 100%;
+  grid-area: img;
+}
+
+.caja__img img {
+  width: 100%;
+}
+
+.caja__titulo {
+  grid-area: titulo;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.caja__descripcion {
+  grid-area: parrafo;
+  font-size: 2rem;
+  margin: 0 20px;
+  width: 80%;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.caja__opcion {
+  grid-area: opciones;
+  font-size: 1.5rem;
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.caja__precio {
+  grid-area: precio;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.caja__boton {
+  grid-area: boton;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.caja__comprar {
+  height: 100%;
+  font-size: 1.5rem;
+  background-color: $color__uno;
+  color: cinco;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.caja__comprar:hover {
+  background-color: $color__tres;
+  cursor: pointer;
+  color: $color__uno;
+  transition: all 0.2s;
+}

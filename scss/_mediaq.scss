@@ -1,0 +1,339 @@
+/* MEDIA QUERIES 768PX */
+@media (max-width: 768px) {
+  /* PAGINA PRINCIPAL */
+  .navegacion a {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* PAGINA INICIO / CATALOGO */
+  .contenedor__padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .contenedor__hijo {
+    height: 300px;
+  }
+
+  .contenedor__oferta {
+    /* background-color: rgba(255, 0, 0, 0.179); */
+    width: 90%;
+    align-items: stretch;
+    margin: 20px;
+  }
+
+  .menu__contacto {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* PAGINA NOSOTROS */
+  .nosotros__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    grid-template-areas:
+      "titulo"
+      "img"
+      "parrafo";
+
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .nosotros__titulo {
+    grid-area: titulo;
+  }
+
+  .nosotros__img {
+    width: 500px;
+    grid-area: img;
+  }
+
+  .nosotros__parrafo {
+    grid-area: parrafo;
+  }
+
+  .seccion__servicio {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    /* height: 100px; */
+  }
+
+  .seccion__servicio article {
+    height: 90%;
+  }
+
+  .seccion__servicio p {
+    opacity: 100%;
+    width: 100%;
+    height: 30px;
+  }
+
+  .bloque__fundador {
+    display: flex;
+    align-items: center;
+  }
+
+  .fundador__img {
+    width: 300px;
+  }
+
+  .fundador__parrafo {
+    text-align: justify;
+    width: 70%;
+  }
+
+  /* PAGINA DE PRODUCTOS */
+  .caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "titulo titulo"
+      "img parrafo"
+      "img opciones"
+      "img precio"
+      "boton boton";
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: $color__dos;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.41);
+  }
+
+  .caja__img {
+    grid-area: img;
+    margin: auto;
+  }
+
+  .caja__img img {
+    width: 100%;
+  }
+
+  .caja__titulo {
+    grid-area: titulo;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .caja__descripcion {
+    grid-area: parrafo;
+    font-size: 2rem;
+    margin: 0 20px;
+    width: 80%;
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  .caja__opcion {
+    grid-area: opciones;
+    font-size: 1.5rem;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .caja__precio {
+    grid-area: precio;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    font-style: italic;
+  }
+
+  .caja__boton {
+    grid-area: boton;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    gap: 5px;
+    margin-left: 15px;
+  }
+
+  .caja__comprar {
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: $color__uno;
+    color: cinco;
+    border: none;
+    border-radius: 5px;
+  }
+
+  /* PANTALLAS PEQUEÑAS */
+  @media (max-width: 576px) {
+    body {
+      overflow-x: hidden;
+    }
+    /* PAGINA PRINCIPAL */
+    /* .header {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+
+      align-items: center;
+    }
+
+    .lista {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header__logo {
+      width: 150px;
+    } */
+
+    .carrusel {
+      display: flex;
+    }
+
+    .carrusel__img {
+      width: 80%;
+      margin: auto;
+    }
+
+    .seccion {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* PAGINA INICIO / CATALOGO */
+    .contenedor__padre {
+      display: flex;
+      /* grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto; */
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .contenedor__hijo {
+      width: 80%;
+      height: 100%;
+    }
+
+    /* PAGINA NOSOTROS */
+    .nosotros {
+      /* background-color: rebeccapurple; */
+      display: flex;
+      /* width: 100%;
+      margin: 0;
+      padding: 0; */
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nosotros__img {
+      width: 100%;
+    }
+
+    .nosotros__parrafo {
+      width: 100%;
+    }
+
+    .seccion__servicio {
+      display: flex;
+      flex-direction: column;
+      /* gap: px; */
+      width: 80%;
+      margin: auto;
+      align-items: center;
+      justify-items: center;
+      /* height: 100px; */
+    }
+
+    .seccion__servicio p {
+      opacity: 100%;
+      width: 100%;
+      /* height: 30px; */
+    }
+
+    .bloque__fundador {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bloque__fundador img {
+      filter: grayscale(0);
+    }
+
+    .bloque__formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* PAGINA DE CADA PRODUCTO */
+
+    .caja {
+      height: 80vh;
+    }
+    .caja__descripcion {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .caja__precio {
+      font-size: 20px;
+    }
+
+    /* PAGINA CONTANCTO */
+
+    .formulario__fieldset {
+      width: 80%;
+      overflow: hidden;
+    }
+
+    .formulario__fieldset legend {
+      font-size: 15px;
+    }
+
+    .formulario__parrafo {
+      width: 100%;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .formulario__input {
+      width: 90%;
+    }
+
+    .formulario__mensaje {
+      width: 90%;
+    }
+
+    .formulario__mensaje textarea {
+      width: 90%;
+    }
+
+    .formulario__checkbox {
+      width: 90%;
+    }
+
+    .contacto__boton {
+      width: 100%;
+    }
+  }
+}

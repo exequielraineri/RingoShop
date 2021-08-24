@@ -1,0 +1,84 @@
+/* Header */
+
+.header {
+  background-color: $color__uno;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+}
+
+.header__logo {
+  width: 18rem;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.navegacion {
+  // background-color: red;
+  width: 100%;
+
+  font-size: 14px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navegacion a {
+  /* background-color: red; */
+  width: 15vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navegacion li :hover {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+
+  text-decoration-line: overline;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: $color__cuatro;
+}
+
+.lista {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lista .lista__item a {
+  text-decoration: none;
+  color: $color__dos;
+  padding: 2rem;
+  margin: 0 20px;
+  display: block;
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.lista li {
+  display: flex;
+  text-align: center;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
+
+  transition: all 0.4s;
+}
+
+.lista a:hover {
+  text-decoration-line: overline;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: $color__cuatro;
+}

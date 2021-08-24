@@ -1,0 +1,21 @@
+/* Pie de pagina */
+footer {
+  background-color: $color__tres;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer .pie {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.redes {
+  margin: auto;
+}
+
+.copyright {
+  margin: auto;
+}
