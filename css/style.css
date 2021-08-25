@@ -96,22 +96,21 @@ main {
 
 .seccion {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  gap: 10px; }
 
 .seccion img {
   width: 100%;
   border-radius: 5px; }
 
 .seccion article {
-  width: 80%;
-  margin: 20px;
+  width: 100%;
   background-image: linear-gradient(white, #f2f2f2);
   border-top: 1px solid #a6a6a6; }
 
 .seccion p {
-  font-size: 1.3rem;
   text-decoration-line: overline;
   margin: 20px;
   text-align: center; }
@@ -120,21 +119,19 @@ main {
 /* subtitulo  */
 .subtitulo {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 20px;
   margin: 20px; }
 
 /* titulo de los articulos */
 .seccion p {
   font-weight: bold;
-  font-size: 1rem;
-  margin: 1rem; }
+  font-size: 13.33333px; }
 
 /* articulos */
 .seccion article {
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding: 10px;
-  overflow: hidden; }
+  padding: 5px; }
 
 .seccion article:hover {
   box-shadow: 0px 0px 37px -11px rgba(0, 0, 0, 0.75);
@@ -145,29 +142,31 @@ main {
   transition: transform 0.3s, box-shadow 0.6s; }
 
 .seccion article table {
-  margin: 2px;
   text-align: center;
   color: #262626;
-  font-size: 10px; }
+  font-size: 10px;
+  font-style: italic; }
 
 .contenedor__padre {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  gap: 10px; }
 
 .contenedor__hijo {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  justify-content: center;
-  align-items: stretch; }
+  grid-template-rows: 1fr auto auto;
+  justify-content: start;
+  align-items: flex-start; }
 
 .contenedor__oferta {
-  /* background-color: red; */
-  /* padding: 5px; */
-  margin: auto; }
+  background-color: red;
+  height: 100%;
+  display: flex;
+  align-items: stretch; }
 
 /* pagina Nosotros - sobre nosotros */
 .menu__nosotros {
@@ -176,11 +175,11 @@ main {
 
 .nosotros {
   margin: 15px;
-  font-size: 1.3rem; }
+  font-size: 10px; }
 
 .nosotros__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "imagen titulo titulo" "imagen parrafo parrafo";
   padding: 20px; }
@@ -191,14 +190,16 @@ main {
 .nosotros__parrafo {
   grid-area: parrafo;
   width: 70%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  line-height: 20px;
+  font-size: 13.33333px; }
 
 .nosotros__img {
   grid-area: imagen;
-  width: 80vh; }
+  width: 100%; }
 
 .menu__nosotros h3 {
-  font-size: 2.5rem;
+  font-size: 25px;
   text-decoration-line: underline; }
 
 .seccion__servicio {
@@ -241,16 +242,25 @@ main {
   padding: 20px; }
 
 .fundador h5 {
-  font-size: 1.3rem;
-  margin: 5px; }
+  font-size: 13.33333px;
+  margin: 5px;
+  font-style: italic;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.2);
+  color: #f2f2f2;
+  width: 40%;
+  margin: auto;
+  border-radius: 10px; }
 
 .fundador {
   width: auto; }
 
 .fundador p {
   margin: 5px;
-  font-size: 1.3rem;
-  line-height: 20px; }
+  color: #0d0d0d;
+  font-size: 13.33333px;
+  line-height: 20px;
+  font-weight: 500; }
 
 .fundador__parrafo {
   margin: auto;
@@ -273,7 +283,7 @@ main {
   margin-top: 1rem; }
 
 .formulario {
-  font-size: 1.3rem;
+  font-size: 13.33333px;
   margin: 5px; }
 
 .formulario__fieldset {
@@ -289,15 +299,15 @@ main {
 .formulario__fieldset legend {
   font-weight: bolder;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 25px;
   text-decoration-line: underline;
-  text-align: center;
-  display: flex; }
+  display: flex;
+  text-align: center; }
 
 .formulario__input {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   justify-content: space-between;
   padding: 10px; }
 
@@ -311,7 +321,7 @@ main {
 .formulario__checkbox {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   gap: 5px;
   text-align: center;
   margin: 5px; }
@@ -321,12 +331,13 @@ main {
   justify-content: space-between; }
 
 .formulario__mensaje {
-  width: 50%; }
+  width: 70%; }
 
 .formulario__mensaje textarea {
-  min-width: 40px;
+  min-width: 70%;
   max-width: 100%;
-  min-height: 40px;
+  min-height: 50px;
+  max-height: 300px;
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
@@ -344,7 +355,7 @@ main {
 .contacto__boton input {
   border: 1px solid black;
   border-radius: 5px;
-  height: 20px; }
+  padding: 3px 6px; }
 
 .contacto__boton input:hover {
   cursor: pointer;

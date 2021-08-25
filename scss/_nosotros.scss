@@ -7,12 +7,12 @@
 
 .nosotros {
   margin: 15px;
-  font-size: 1.3rem;
+  font-size: $size / 2;
 }
 
 .nosotros__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: auto auto;
 
   grid-template-areas:
@@ -30,15 +30,17 @@
   grid-area: parrafo;
   width: 70%;
   margin: 0 auto;
+  line-height: 20px;
+  font-size: $size / 1.5;
 }
 
 .nosotros__img {
   grid-area: imagen;
-  width: 80vh;
+  width: 100%;
 }
 
 .menu__nosotros h3 {
-  font-size: 2.5rem;
+  font-size: $size + 5;
   text-decoration-line: underline;
 }
 
@@ -91,8 +93,15 @@
 }
 
 .fundador h5 {
-  font-size: 1.3rem;
+  font-size: $size / 1.5;
   margin: 5px;
+  font-style: italic;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.2);
+  color: $color__uno;
+  width: 40%;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .fundador {
@@ -101,8 +110,10 @@
 
 .fundador p {
   margin: 5px;
-  font-size: 1.3rem;
+  color: $color__cinco;
+  font-size: $size / 1.5;
   line-height: 20px;
+  font-weight: 500;
 }
 
 .fundador__parrafo {

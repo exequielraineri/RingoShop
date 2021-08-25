@@ -8,7 +8,7 @@
 }
 
 .formulario {
-  font-size: 1.3rem;
+  font-size: $size / 1.5;
   margin: 5px;
 }
 
@@ -26,16 +26,16 @@
 .formulario__fieldset legend {
   font-weight: bolder;
   font-style: italic;
-  font-size: 2rem;
+  font-size: $size + 5;
   text-decoration-line: underline;
-  text-align: center;
   display: flex;
+  text-align: center;
 }
 
 .formulario__input {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   justify-content: space-between;
   padding: 10px;
 }
@@ -51,7 +51,7 @@
 .formulario__checkbox {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   gap: 5px;
   text-align: center;
   margin: 5px;
@@ -63,13 +63,14 @@
 }
 
 .formulario__mensaje {
-  width: 50%;
+  width: 70%;
 }
 
 .formulario__mensaje textarea {
-  min-width: 40px;
+  min-width: 70%;
   max-width: 100%;
-  min-height: 40px;
+  min-height: 50px;
+  max-height: 300px;
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
@@ -89,7 +90,7 @@
 .contacto__boton input {
   border: 1px solid black;
   border-radius: 5px;
-  height: 20px;
+  padding: 3px 6px;
 }
 
 .contacto__boton input:hover {
