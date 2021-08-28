@@ -5,6 +5,16 @@ $color__cuatro: #262626;
 $color__cinco: #0d0d0d;
 $size: 20px;
 
+@import "./header";
+@import "./carrusel";
+@import "./menuIndex";
+@import "./catalogo";
+@import "./nosotros";
+@import "./contacto";
+@import "./producto";
+@import "./footer";
+@import "./mediaQ";
+
 * {
   margin: 0;
   padding: 0;
@@ -24,12 +34,9 @@ ul {
   list-style: none;
 }
 
-@import "./header";
-@import "./carrusel";
-@import "./menuIndex";
-@import "./catalogo";
-@import "./nosotros";
-@import "./contacto";
-@import "./producto";
-@import "./footer";
-@import "./mediaQ";
+/* OPERACIONES */
+@for $i from 1 through 5 {
+  .mbutton-#{$i} {
+    margin-bottom: 1rem * $i;
+  }
+}

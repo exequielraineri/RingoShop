@@ -16,15 +16,10 @@
     grid-template-rows: auto auto auto auto auto;
   }
 
-  .contenedor__hijo {
-    height: 300px;
-  }
-
   .contenedor__oferta {
     /* background-color: rgba(255, 0, 0, 0.179); */
-    width: 90%;
-    align-items: stretch;
-    margin: 20px;
+    // align-items: stretch;
+    height: 80%;
   }
 
   .menu__contacto {
