@@ -148,10 +148,11 @@ main {
   align-items: flex-start; }
 
 .contenedor__oferta {
-  background-color: red;
   height: 100%;
   display: flex;
-  align-items: stretch; }
+  align-items: stretch;
+  justify-content: center;
+  margin: auto; }
 
 /* pagina Nosotros - sobre nosotros */
 .menu__nosotros {

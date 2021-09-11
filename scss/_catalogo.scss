@@ -58,8 +58,9 @@
 }
 
 .contenedor__oferta {
-  background-color: red;
   height: 100%;
   display: flex;
   align-items: stretch;
+  justify-content: center;
+  margin: auto;
 }
