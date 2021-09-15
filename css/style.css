@@ -46,17 +46,19 @@
 .lista .lista__item a {
   text-decoration: none;
   color: #a6a6a6;
-  padding: 2rem;
+  padding: 1rem;
   margin: 0 20px;
   display: block;
   font-size: 1.2rem;
   font-family: Roboto, sans-serif;
   font-weight: bolder;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  align-items: center; }
 
 .lista li {
   display: flex;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
 
 .header__logo:hover {
   transform: scale(1.1);
@@ -71,7 +73,7 @@
 /* CARRUSEL */
 .bloque__carrusel {
   background-color: rgba(0, 0, 0, 0.01);
-  width: 80%;
+  width: 100%;
   margin: auto; }
 
 /* MENU */
@@ -84,7 +86,7 @@ main {
   width: 90%;
   margin: auto;
   text-align: center;
-  gap: 10px; }
+  gap: 50px; }
 
 .seccion img {
   width: 100%;
@@ -138,7 +140,7 @@ main {
   grid-template-rows: auto auto auto;
   width: 90%;
   margin: auto;
-  gap: 10px; }
+  gap: 30px; }
 
 .contenedor__hijo {
   display: grid;
@@ -444,6 +446,10 @@ footer .pie {
 
 footer .redes {
   margin: auto; }
+
+footer .icon:hover {
+  transform: scale(1.1);
+  transition: all 0.4s; }
 
 footer .copyright {
   margin: auto; }
